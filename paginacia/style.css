@@ -1,0 +1,136 @@
+/* Базові налаштування для всіх елементів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+}
+
+
+
+
+.header {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  padding: 30px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+
+.search-block {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.block__input {
+  width: 300px;
+  height: 40px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button__block {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button__block:hover {
+  background-color: #444;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+
+
+.block__news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+
+.pagination {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.btn1, .btn2 {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn1:disabled, .btn2:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.btn1:hover:not(:disabled), .btn2:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.span {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
